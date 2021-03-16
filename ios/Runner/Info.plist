@@ -47,8 +47,16 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>com.googleusercontent.apps.647473798016-qtk0bl36l8q3eoqfokgtfhe1jm4g21h7</string>
+                <string>fb2971934153130955</string>
 			</array>
 		</dict>
 	</array>
+    
+
+    <key>FacebookAppID</key>
+    <string>2971934153130955</string>
+    <key>FacebookDisplayName</key>
+    <string>Demo Flutter</string>
+    
 </dict>
 </plist>

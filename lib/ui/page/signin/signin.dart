@@ -27,6 +27,14 @@ class SignInView extends StatelessWidget {
     }
   }
 
+  Future<void> _signInWithFacebook() async {
+    try {
+      await auth.signInWithFacebook();
+    } catch (e) {
+      print("Error $e");
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -61,7 +69,7 @@ class SignInView extends StatelessWidget {
                   "/Users/ericampire/Workspace/Programming/demo/flutter_demo/images/facebook-logo.png",
               color: Color(0xFF334D92),
               textColor: Colors.white,
-              onPressed: () {},
+              onPressed: _signInWithFacebook,
               text: "Sign In With Facebook",
             ),
             SizedBox(height: 10),
